@@ -7,13 +7,18 @@
     <title>Image Compression Tool</title>
 </head>
 <body>
-    <input type="file" id="imageInput" accept="image/*">
-    <button onclick="compressImage()">Compress Image</button>
-    <br>
-    <img id="originalImage" alt="Original Image">
-    <br>
-    <a id="downloadLink" style="display: none;" download="compressed_image.jpg">Download Compressed Image</a>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="drop-area" id="dropArea">
+            <p>Drag & Drop images here or click to upload</p>
+            <input type="file" id="fileInput" multiple>
+        </div>
+        <div id="options">
+            <label for="quality">Compression Quality:</label>
+            <input type="range" id="quality" name="quality" min="1" max="100" value="80">
+            <button onclick="compressImages()">Compress</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
