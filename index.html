@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Compression Tool</title>
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="compressImage()">Compress Image</button>
+    <br>
+    <img id="originalImage" alt="Original Image">
+    <br>
+    <a id="downloadLink" style="display: none;" download="compressed_image.jpg">Download Compressed Image</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
